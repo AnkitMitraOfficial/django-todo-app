@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <style>
+        form {
+            text-align: center;
+        }
+        h6 {
+            text-align: center;
+        }
+    </style>
+    {% extends "todo/base.html" %}
+
+    {% block content %}
+    <br>
+    <br>
+    <br>
+
+    <h3>About This Website</h3>
+    <p>Life is fun. But life is also busy. There's a million different things you could be doing. But what matters is <u>what</u> you do. I created <b><i>Todo Woo</i></b> to help you make sense of all of your opportunities and live that life that matters most to you. Your new organized life awaits.</p>
+    <h3>What does the owner say about this site?</h3>
+    <ol type="1">
+        <li>Fast</li>
+        <li>Secure</li>
+        <li>Get your life organized</li>
+        <li>Relaible and easy Interface</li>
+    </ol>
+    <h3>About The Owner</h3>
+    <p>This site is owned by Ankit Mitra.He is 14 years old and loves coding. The components used for making the site</p>
+    <ul>
+        <li>Python</li>
+        <li>Django</li>
+        <li>CSS 3</li>
+        <li>Bootstrap 4</li>
+        <li>Html 5</li>
+    </ul>
+    <form action="{% url 'currenttodos' %}">
+    <button type="submit" class="btn btn-outline-primary">Home</button><br><br>
+</form>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5f71cc424704467e89f2e2c5/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+<h6>All Rights Reserved 2020</h6>
+  <br>
+
+    {% endblock %}
+</html>
